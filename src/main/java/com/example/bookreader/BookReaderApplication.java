@@ -1,14 +1,15 @@
 package com.example.bookreader;
 
-import org.springframework.boot.SpringApplication;
+import com.example.bookreader.services.BookService;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class BookReaderApplication {
 
     public static void main(String[] args) {
-        Driver d = new Driver();
-        d.printBooks("bestsellers with categories.csv");
+
+        BookService bookService = new BookService();
+        bookService.printBookDetails("bestsellers with categories.csv");
     }
 
 }

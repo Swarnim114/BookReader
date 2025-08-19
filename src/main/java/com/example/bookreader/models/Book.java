@@ -1,10 +1,11 @@
-package com.example.bookreader;
+package com.example.bookreader.models;
 
 
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.Year;
+//this is the book class
+
 @Getter
 @Setter
 public class Book {
