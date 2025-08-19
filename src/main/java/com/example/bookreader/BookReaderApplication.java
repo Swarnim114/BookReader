@@ -10,6 +10,8 @@ public class BookReaderApplication {
 
         BookService bookService = new BookService();
         bookService.printBookDetails("bestsellers with categories.csv");
+        bookService.getBooksAndPricesByAuthor("bestsellers with categories.csv", "James Clear");
+        bookService.getBooksByRating("bestsellers with categories.csv" ,4);
     }
 
 }
